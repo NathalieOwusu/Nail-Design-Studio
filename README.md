@@ -46,7 +46,8 @@ Graphics: HTML5, CSS, and Javascript.
 
 
 A preview of the landing page.
-<img width="1468" alt="Screenshot 2024-12-10 at 7 48 32 PM" src="https://github.com/user-attachments/assets/f8262b54-047f-4e35-9dc2-aee4a75d2366">
+<img width="1466" alt="Screenshot 2024-12-11 at 5 44 31 PM" src="https://github.com/user-attachments/assets/2cf1e9da-1675-4c12-9129-cca1f1168c09" />
+
 
 Contributing:
 We welcome contributions to this project! If you want to help improve the Virtual Nail Art Designer, follow these steps:
