@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+body{
+  background-color: #EEC5ED;
+ 
+}
+h1{
+  font-family: "Sarina", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color:rgba(181, 0, 181, 0.676);
+  text-align: center;
+  font-size: 30px;
+  z-index:2;
+  bottom:-15vh;
+  left:3vh;
+  position: relative;
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+img{
+  z-index:0;
+  position: fixed;
+  left: 10vh;
+  top:5vh;
+}
+.handmodel{
+    position: fixed;
+  z-index: 1; 
+}
+.button{
+  position: absolute;
+ padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fcfcfc;
+  background-color: #9B2699;
+  border: 1 solid rgb(29, 4, 30) px;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(134, 25, 121, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  left:82.5vh;
+  z-index:3;
+  top:90vh
+  
+  
+}
+.button:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 15px 20px rgba(192, 46, 229, 0.4);
+  color: #000000;
+  transform: translateY(-7px);
+}
+
+.button:active {
+  transform: translateY(-2px);
+}
+
+.stars{
+  position: fixed; 
+
+
+}
+.gold{
+ width:700px;
+ transform: rotate(90deg);
+ position: fixed;
+ top:16vh;
+ left: -24vh;
+ z-index: 1;
+}
+.gold2{
+   width:700px;
+ transform: rotate(-90deg);
+ position: fixed;
+ top:35vh;
+ left: 120vh;
+ z-index:1;
+}
+.gold3{
+   width:700px;
+   position: fixed;
+   top: 55vh;
+   left:-3vh;
+   z-index: 1;
+}
+.gold4{
+  width:700px;
+ transform: rotate(180deg);
+ position: fixed;
+ top:-5vh;
+ left: 100vh;
+ z-index: 1;
+}
+.polish{
+  position: absolute;
+  left:18vh;
+}
+ .pinkdust{
+    transform:rotate(-15deg);
+  position: fixed;
+  left:0vh;
+  top: -20vh;
+  z-index:0;
+}
+.pinkdust2{
+  transform: rotate(-90deg);
+ position:fixed;
+ top:-30vh;
+ left: -38vh;
+ z-index: 0; 
+}
+.pinkdust3{
+  transform: rotate(90deg);
+ position:fixed;
+ top:35vh;
+ left: 50vh;
+ z-index: 0; 
+}
+.pinkdust4{
+  transform: rotate(180deg);
+ position:fixed;
+ left:13vh;
+ top:10vh;
+ z-index: 0;
+}
