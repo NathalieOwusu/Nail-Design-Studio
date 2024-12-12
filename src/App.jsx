@@ -1,39 +1,46 @@
 import * as React from "react";
-import { Routes, Route } from 'react-router-dom';
-import Main from "./main"
-import "./styles.css";
+import { useNavigate } from "react-router-dom";
 
-//imported images
+
+import "./styles.scss";
+
+// Imported images
 import HAND from "./Hand.png";
-import STARS from './stars.png'
-import POLISH from './polish.png'
-import PNKDST from './pinkdust.png'
-
+import STARS from "./stars.png";
+import POLISH from "./polish.png";
+import PNKDST from "./pinkdust.png";
 
 const App = () => {
-  
+  // Initialize the navigate function
+  const navigate = useNavigate();
+
+  // Function to handle button click
   const handleButtonClick = () => {
-    window.open('/main', "_self"); 
-}
-return (
-  <>
-    <Routes>
-      <Route path="/" element={<Main />}></Route>
-    </Routes>
+    console.log("Start Designing button clicked!");
+    // Navigate to the /main route
+    navigate("/main");
+  };
 
-    <button onClick={handleButtonClick} className="button">
-      Start Designing
-    </button>
+  return (
+    <div className="App">
+     
 
-    <img src={HAND} alt="hand-model" className="handmodel" />
-    <img src={STARS} alt="stars-background" className="stars" />
-    <img src={POLISH} alt="nail-polish" className="polish" />
-    <img src={PNKDST} alt="pink-dust" className="pinkdust" />
-    <img src={PNKDST} alt="pink-dust" className="pinkdust2" />
-    <img src={PNKDST} alt="pink-dust" className="pinkdust3" />
-    <img src={PNKDST} alt="pink-dust" className="pinkdust4" />
-  </>
-);
+      <div className="design-section">
+        <button onClick={handleButtonClick} className="button">
+          Start Designing
+        </button>
+
+        {/* Images */}
+        <img src={HAND} alt="Hand model" className="handmodel" />
+        <img src={STARS} alt="Stars background" className="stars" />
+        <img src={POLISH} alt="Nail polish" className="polish" />
+        <img src={PNKDST} alt="Pink dust" className="pinkdust" />
+        <img src={PNKDST} alt="Pink dust 2" className="pinkdust2" />
+        <img src={PNKDST} alt="Pink dust 3" className="pinkdust3" />
+        <img src={PNKDST} alt="Pink dust 4" className="pinkdust4" />
+      </div>
+    </div>
+  );
 };
 
 export default App;

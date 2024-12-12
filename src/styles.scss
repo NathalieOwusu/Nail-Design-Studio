@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+
+
+body {
+  background-color: #530652;
+  font-family: 'Sarina', cursive;
+  color:#4a0148;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-page {
+  background-color: #f8c8e9c7;
+  min-height: 93vh;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
+.square {
+  min-height: 32vh;
+  padding: 200px;
+  background-color: #ec19634f;
+  border-radius: 20px;
+  position: fixed;
+}
+
+.square2 {
+  @extend .square;
+  min-height: 30vh;
+  left: 130.5vh;
+  bottom: 6vh;
+}
+
+
+.handmodel2 {
+  position: fixed;
+  left: 15vh;
+}
+
+
+.Geltitle {
+  position: fixed;
+  left: 142vh;
+  bottom: 85vh;
+}
+
+.ChooseShape {
+  position: relative;
+  left: 3vh;
+  top: 1vh;
+}
+
+
+.almond { 
+  @extend .nail-shape;
+  top: 15vh;
+  left: 7vh;
+}
+
+.ballerina { 
+  @extend .nail-shape;
+  top: 15vh;
+  left: 30vh;
+}
+
+.oval { 
+  @extend .nail-shape;
+  top: 35vh;
+  left: 7vh;
+}
+
+.squarenail { 
+  @extend .nail-shape;
+  top: 35vh;
+  left: 30vh;
+}
+
+.squoval { 
+  @extend .nail-shape;
+  top: 55vh;
+  left: 7vh;
+}
+
+.stiletto { 
+  @extend .nail-shape;
+  top: 55vh;
+  left: 30vh;
+}
+
+.flare { 
+  @extend .nail-shape;
+  top: 75vh;
+  left: 30vh;
+}
+
+.lipstick { 
+  @extend .nail-shape;
+  top: 75vh;
+  left: 7vh;
+}
+
+.hand-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+@media (max-width: 768px) {
+  .main-page {
+    padding: 10px;
+  }
+
+  .square, .square2 {
+    min-height: 20vh;
+    padding: 100px;
+  }
+
+  .nail-shape {
+    top: auto;
+    left: 10vh;
+    position: relative;
+    margin-bottom: 20px;
+  }
+}
+
+img{
+  z-index:0;
+  position: fixed;
+  left: 10vh;
+  top:5vh;
+}
+.handmodel{
+    position: fixed;
+  z-index: 1; 
+}
+.button{
+  position: fixed;
+ padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fcfcfc;
+  background-color: #8f32a4;
+  border-radius: 45px;
+  border: 2px solid #530652;
+  box-shadow: 0px 8px 15px rgba(66, 27, 62, 0.902);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  left:82.5vh;
+  z-index:3;
+  top:85vh
+  
+  
+}
+.button:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 15px 20px rgba(192, 46, 229, 0.4);
+  color: #000000;
+  transform: translateY(-7px);
+}
+
+.button:active {
+  transform: translateY(-2px);
+}
+
+.stars{
+  position: fixed; 
+
+
+}
+
+.polish{
+  position: fixed;
+  left:22vh;
+}
+ .pinkdust{
+    transform:rotate(-15deg);
+  position: fixed;
+  left:0vh;
+  top: -22vh;
+  z-index:0;
+}
+.pinkdust2{
+  transform: rotate(-90deg);
+ position:fixed;
+ top:-30vh;
+ left: -38vh;
+ z-index: 0; 
+}
+.pinkdust3{
+  transform: rotate(90deg);
+ position:fixed;
+ top:35vh;
+ left: 50vh;
+ z-index: 0; 
+}
+.pinkdust4{
+  transform: rotate(180deg);
+ position:fixed;
+ left:13vh;
+ top:10vh;
+ z-index: 0;
+}
