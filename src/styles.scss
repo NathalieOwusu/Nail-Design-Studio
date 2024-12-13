@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
 
 
@@ -6,6 +8,7 @@ body {
   font-family: 'Sarina', cursive;
   color:#4a0148;
   margin: 0;
+  position: relative;
   padding: 0;
 }
 
@@ -16,6 +19,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   border-radius: 20px;
+  position: fixed;
 }
 
 
@@ -35,12 +39,6 @@ body {
 }
 
 
-.handmodel2 {
-  position: fixed;
-  left: 15vh;
-}
-
-
 .Geltitle {
   position: fixed;
   left: 142vh;
@@ -55,90 +53,105 @@ body {
 
 
 .almond { 
-  @extend .nail-shape;
-  top: 15vh;
-  left: 7vh;
+  top: -95vh;
+  left: 3vh;
+
 }
 
 .ballerina { 
-  @extend .nail-shape;
-  top: 15vh;
-  left: 30vh;
+  top: -95vh;
+  left: 8vh;
 }
 
 .oval { 
-  @extend .nail-shape;
-  top: 35vh;
-  left: 7vh;
+  top: -75vh;
+  left: -11vh;
 }
 
 .squarenail { 
-  @extend .nail-shape;
-  top: 35vh;
-  left: 30vh;
+  top: -55vh;
+  left: -30vh;
 }
 
 .squoval { 
-  @extend .nail-shape;
-  top: 55vh;
-  left: 7vh;
+  top: -35vh;
+  left: -49vh;
 }
 
 .stiletto { 
-  @extend .nail-shape;
-  top: 55vh;
-  left: 30vh;
+  top: -75vh;
+  left: -90vh;
 }
 
 .flare { 
-  @extend .nail-shape;
-  top: 75vh;
-  left: 30vh;
+  top: -55vh;
+  left: -108vh;
 }
 
 .lipstick { 
-  @extend .nail-shape;
-  top: 75vh;
-  left: 7vh;
-}
 
-.hand-container {
-  position: relative;
-  display: inline-block;
-}
-
-
-@media (max-width: 768px) {
-  .main-page {
-    padding: 10px;
-  }
-
-  .square, .square2 {
-    min-height: 20vh;
-    padding: 100px;
-  }
-
-  .nail-shape {
-    top: auto;
-    left: 10vh;
-    position: relative;
-    margin-bottom: 20px;
-  }
+  top: -35vh;
+  left: -127vh;
 }
 
 img{
   z-index:0;
-  position: fixed;
+  position: relative;
   left: 10vh;
   top:5vh;
 }
-.handmodel{
-    position: fixed;
-  z-index: 1; 
+
+
+.stars{
+  position: fixed; 
+  z-index:-1;
+
 }
-.button{
+
+.polish{
   position: fixed;
- padding: 1.3em 3em;
+  left:22vh;
+  z-index:-1;
+}
+
+.handmodel2 {
+  position: relative;
+  top: -9vh;
+  left: 15vh;
+}
+
+
+.polish1, .polish2, .polish3, .polish4, .polish5, .polish6, 
+.polish7, .polish8, .polish9, .polish10, .polish11, .polish12 {
+  position: fixed;
+  
+}
+
+.polish1 { 
+  left: 108vh; 
+  top: 10vh; 
+  position:fixed;
+}
+.polish2 { 
+  left: 121vh; 
+  top: 10vh; 
+  position:fixed;
+}
+.polish3 { left: 133vh; top: 10vh; }
+.polish4 { left: 147vh; top: 10vh; }
+.polish5 { left: 106vh; top: 38vh; }
+.polish6 { left: 123vh; top: 38.5vh; }
+.polish7 { left: 133vh; top: 38.9vh; }
+.polish8 { left: 143vh; top: 38vh; }
+.polish9 { left: 107vh; top: 67vh; }
+.polish10 { left: 116vh; top: 66.4vh; }
+.polish11 { left: 130.5vh; top: 67.3vh; }
+.polish12 { left: 145vh; top: 67.6vh; }
+
+
+.button {
+  position: fixed;
+  padding: 1.3em 3em;
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -150,12 +163,11 @@ img{
   box-shadow: 0px 8px 15px rgba(66, 27, 62, 0.902);
   transition: all 0.3s ease 0s;
   cursor: pointer;
-  left:82.5vh;
-  z-index:3;
-  top:85vh
-  
-  
+  left: 82.5vh;
+  top: 85vh;
+  z-index: 3;
 }
+
 .button:hover {
   background-color: #ffffff;
   box-shadow: 0px 15px 20px rgba(192, 46, 229, 0.4);
@@ -163,45 +175,13 @@ img{
   transform: translateY(-7px);
 }
 
-.button:active {
-  transform: translateY(-2px);
-}
 
-.stars{
-  position: fixed; 
-
-
-}
-
-.polish{
+.pinkdust, .pinkdust2, .pinkdust3, .pinkdust4 {
   position: fixed;
-  left:22vh;
+  z-index: 0;
 }
- .pinkdust{
-    transform:rotate(-15deg);
-  position: fixed;
-  left:0vh;
-  top: -22vh;
-  z-index:0;
-}
-.pinkdust2{
-  transform: rotate(-90deg);
- position:fixed;
- top:-30vh;
- left: -38vh;
- z-index: 0; 
-}
-.pinkdust3{
-  transform: rotate(90deg);
- position:fixed;
- top:35vh;
- left: 50vh;
- z-index: 0; 
-}
-.pinkdust4{
-  transform: rotate(180deg);
- position:fixed;
- left:13vh;
- top:10vh;
- z-index: 0;
-}
+
+.pinkdust { top: -22vh; left: 0vh; transform: rotate(-15deg); }
+.pinkdust2 { top: -30vh; left: -38vh; transform: rotate(-90deg); }
+.pinkdust3 { top: 35vh; left: 50vh; transform: rotate(90deg); }
+.pinkdust4 { top: 10vh; left: 13vh; transform: rotate(180deg); }
