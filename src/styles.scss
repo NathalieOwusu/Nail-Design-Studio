@@ -115,7 +115,7 @@ img{
 .handmodel2 {
   position: relative;
   top: -9vh;
-  left: 15vh;
+  left: 13vh;
 }
 
 
@@ -216,7 +216,7 @@ width:350px;
 
 .pinkdust, .pinkdust2, .pinkdust3, .pinkdust4 {
   position: fixed;
-  z-index: 0;
+  z-index: -1;
 }
 
 .pinkdust { top: -22vh; left: 0vh; transform: rotate(-15deg); }
