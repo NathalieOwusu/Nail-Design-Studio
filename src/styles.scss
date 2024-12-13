@@ -1,5 +1,4 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
 
 
@@ -15,10 +14,9 @@ body {
 
 .main-page {
   background-color: #f8c8e9c7;
-  min-height: 93vh;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 5px;
   position: fixed;
 }
 
@@ -128,25 +126,65 @@ img{
 }
 
 .polish1 { 
-  left: 108vh; 
-  top: 10vh; 
-  position:fixed;
+  left: 119vh; 
+  top: 15vh; 
+  width:300px;
 }
 .polish2 { 
-  left: 121vh; 
-  top: 10vh; 
-  position:fixed;
+  left: 131vh; 
+  top: 15vh; 
+  width:300px;
 }
-.polish3 { left: 133vh; top: 10vh; }
-.polish4 { left: 147vh; top: 10vh; }
-.polish5 { left: 106vh; top: 38vh; }
-.polish6 { left: 123vh; top: 38.5vh; }
-.polish7 { left: 133vh; top: 38.9vh; }
-.polish8 { left: 143vh; top: 38vh; }
-.polish9 { left: 107vh; top: 67vh; }
-.polish10 { left: 116vh; top: 66.4vh; }
-.polish11 { left: 130.5vh; top: 67.3vh; }
-.polish12 { left: 145vh; top: 67.6vh; }
+.polish3 { 
+  left: 142vh;
+   top: 15vh;
+   width:320px;
+   }
+.polish4 { 
+  left: 155vh; 
+  top: 15vh; 
+  width:300px;
+}
+.polish5 { 
+left: 116vh; 
+top: 38vh; 
+width:350px;
+}
+.polish6 { 
+  left: 132vh; 
+  top: 38.5vh; 
+  width: 310px;
+}
+.polish7 { 
+  left: 141vh; 
+  top: 38.9vh; 
+  width:325px;
+}
+.polish8 { 
+  left: 150vh; 
+  top: 38vh;
+  width:335px;
+ }
+.polish9 { 
+  left: 117vh; 
+  top: 67vh; 
+  width:335px;
+}
+.polish10 { 
+  left: 125.5vh;
+   top: 66.4vh; 
+   width:382px;
+  }
+.polish11 { 
+  left: 140vh;
+   top: 67.3vh; 
+   width:350px;
+  }
+.polish12 { 
+  left: 154vh; 
+  top: 67.6vh; 
+  width:325px;
+}
 
 
 .button {

@@ -36,16 +36,27 @@ const NailShape = ({ src, alt, className, onClick }) => (
     onClick={onClick}
     style={{ cursor: "pointer" }}
   />
-);
+)
+   const NailColor = ({ src, alt, className, onClick }) => (
+    <img
+    src={src}
+    alt={alt}
+    className={className}
+    onClick={onClick}
+    style={{ cursor: "pointer"}}
+    />
+)
 
 const Main = () => {
   // Handler for when any nail shape is clicked
   const handleNailShapeClick = (shapeName) => {
     alert(`${shapeName} nail shape clicked!`);
   };
+  const handleNailColorClick = (colorName) => {
+    alert(`${colorName} gel polish clicked!`);
+  }
 
   return (
-   
     <div className="main-page">
       <div className="ChooseShape">
         <h1>Select Nail Shape:</h1>
@@ -56,10 +67,7 @@ const Main = () => {
       <div className="square">
         <div className="square2"></div>
       </div>
-
-      {/* Hand Model */}
       <img src={HAND2} alt="Hand model" className="handmodel2" />
-
       {/* Nail Shape Images */}
       <NailShape
         src={ALMOND}
@@ -109,52 +117,81 @@ const Main = () => {
         className="lipstick"
         onClick={() => handleNailShapeClick("Lipstick")}
       />
+      <NailColor
+        src={polish1}
+        alt="Polish 1"
+        className="polish1"
+        onClick={() => handleNailColorClick("Georgia Peach")}
+      />
+      <NailColor
+        src={polish2}
+        alt="Polish 2"
+        className="polish2"
+        onClick={() => handleNailColorClick("Clementine")}
+      />
 
-    
-    
+      <NailColor
+        src={polish3}
+        alt="Polish 3"
+        className="polish3"
+        onClick={() => handleNailColorClick("Sunshine")}
+      />
 
+      <NailColor
+        src={polish4}
+        alt="Polish 4"
+        className="polish4"
+        onClick={() => handleNailColorClick("Seafoam Green")}
+      />
 
-
-
-
-
-      <div className="polish1">
-        <img src={polish1} alt="Polish 1" width="300" />
-      </div>
-      
-       <div className="polish2">
-        <img src={polish2} alt="Polish 2" width="300" />
-      </div>
-      <div className="polish3">
-        <img src={polish3} alt="Polish 3" width="320" />
-      </div>
-      <div className="polish4">
-        <img src={polish4} alt="Polish 4" width="300" />
-      </div>
-      <div className="polish5">
-        <img src={polish5} alt="Polish 5" width="350" />
-      </div>
-      <div className="polish6">
-        <img src={polish6} alt="Polish 6" width="310" />
-      </div>
-      <div className="polish7">
-        <img src={polish7} alt="Polish 7" width="325" />
-      </div>
-      <div className="polish8">
-        <img src={polish8} alt="Polish 8" width="330" />
-      </div>
-      <div className="polish9">
-        <img src={polish9} alt="Polish 9" width="325" />
-      </div>
-      <div className="polish10">
-        <img src={polish10} alt="Polish 10" width="372" />
-      </div>
-      <div className="polish11">
-        <img src={polish11} alt="Polish 11" width="345" />
-      </div>
-      <div className="polish12">
-        <img src={polish12} alt="Polish 12" width="320" />
-      </div> 
+      <NailColor
+        src={polish5}
+        alt="Polish 5"
+        className="polish5"
+        onClick={() => handleNailColorClick("Mystic Mermaid")}
+      />
+      <NailColor
+        src={polish6}
+        alt="Polish 6"
+        className="polish6"
+        onClick={() => handleNailColorClick("Blue Lagoon")}
+      />
+      <NailColor
+        src={polish7}
+        alt="Polish 7"
+        className="polish7"
+        onClick={() => handleNailColorClick("Purple Haze")}
+      />
+      <NailColor
+        src={polish8}
+        alt="Polish 8"
+        className="polish8"
+        onClick={() => handleNailColorClick("vibranium")}
+      />
+      <NailColor
+        src={polish9}
+        alt="Polish 9"
+        className="polish9"
+        onClick={() => handleNailColorClick("raspberry sorbet")}
+      />
+      <NailColor
+        src={polish10}
+        alt="Polish 10"
+        className="polish10"
+        onClick={() => handleNailColorClick("Hot Cherry")}
+      />
+      <NailColor
+        src={polish11}
+        alt="Polish 11"
+        className="polish11"
+        onClick={() => handleNailColorClick("Pink Champagne")}
+      />
+      <NailColor
+        src={polish12}
+        alt="Polish 12"
+        className="polish12"
+        onClick={() => handleNailColorClick("Coral Kiss")}
+      />
     </div>
   );
 };
