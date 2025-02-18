@@ -3,24 +3,22 @@
 Virtual Nail Art Designer Platform
 Welcome to the Virtual Nail Art Designer, a dynamic and interactive platform where users can explore and create custom nail designs. With this tool, you can select from a variety of nail shapes, colors, patterns, and effects in real-time to create the perfect design. Whether you're looking for a fun, girly style or a more professional look, this platform offers endless possibilities!
 
-Features:
-Nail Shape Selection
-Choose from a variety of nail shapes, including coffin, stiletto, almond, and square.
 
-Customizable Colors:
-Apply solid colors, gradients, and metallic effects to your nails in real-time.
+1.  Core Features (MVP)
 
-Pattern & Design Options:
-Select from a range of pre-designed patterns 
+Choose Nail Shapes & Gel Polishes:
+Create a few 2D  nail shapes.  Allow users to toggle between shapes (square, oval, stiletto, etc.).
+Build an interface where users can select colors 
 
-Real-Time Preview:
-See your design come to life instantly with real-time rendering.
+2. Backend and Storage (if needed)
+Save Designs:
+Allow users to save their selected nail data to a backend database. 
 
-Save & Share:
-Save your designs and share them with friends or social media.
-
-Interactive Interface:
-An intuitive user interface for an engaging, smooth experience.
+3. Finalize Design 
+Improve visual and UI consistency across pages.
+Ensure the site works well on all devices (responsive design).
+Add animations or transitions for a more polished feel.
+ 
 
 Getting Started:
 To get started with the Virtual Nail Art Designer, follow these steps:
@@ -39,7 +37,7 @@ npm start
 This will open the platform in your browser at http://localhost:8080.
 
 Tech Stack:
-Frontend: React.js + Typescript for the user interface.
+Frontend: React.js
 Canva: Ai Art(for the hand model and graphics) 
 Backend (Optional): Node.js (for handling user data or saving designs).
 Graphics: HTML5, CSS, and Javascript.
